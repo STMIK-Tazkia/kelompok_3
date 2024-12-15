@@ -73,14 +73,27 @@ def bubble_sort(parameter):
             break
     return parameter
 
-# Himpunan yang diberikan
-A = {109, 222, 120, 150, 200, 321, 410, 120, 230, 300, 111, 89, 70, 45, 57, 31, 39, 900, 378, 400, 101, 201, 301, 1}
-
-# Mengubah himpunan menjadi list agar bisa diurutkan
+# Fungsi Untuk Mengubah himpunan menjadi list agar bisa diurutkan
 A_list = list(A)
 
-# Mengurutkan A dengan bubble sort
+# Fungsi Untuk Mengurutkan Himpunan A dengan bubble sort
 sorted_A = bubble_sort(A_list)
 
 # Menampilkan hasil setelah diurutkan
 print("Himpunan yang diurutkan:", sorted_A)
+
+# Himpunan yang diberikan
+A = {109, 222, 120, 150, 200, 321, 410, 120, 230, 300, 111, 89, 70, 45, 57, 31, 39, 900, 378, 400, 101, 201, 301, 1}
+
+# Fungsi Untuk Mencari Nilai X Pada Himpunan A
+x = 109
+
+# Mengubah himpunan menjadi list dan mengurutkannya
+sorted_A = sorted(A)
+
+# Mencari indeks elemen x dalam list yang terurut
+if x in sorted_A:
+    index = sorted_A.index(x)
+    print(f"Nilai {x} ditemukan pada indeks {index} dalam himpunan yang terurut.")
+else:
+    print(f"Nilai {x} tidak ditemukan dalam himpunan.")
