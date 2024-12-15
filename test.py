@@ -60,9 +60,8 @@ def bubble_sort(parameter):
     n = len(parameter)
     # Melakukan bubble sort
     for i in range(n):
-        # Flag untuk memeriksa apakah ada pertukaran elemen
         swapped = False
-        # Perulangan untuk membandingkan elemen-elemen yang berdekatan
+        # Mengurangi perbandingan elemen setelah setiap iterasi karena elemen terbesar sudah berada di akhir
         for j in range(0, n - i - 1):
             if parameter[j] > parameter[j + 1]:
                 # Tukar elemen jika elemen sebelumnya lebih besar
@@ -73,10 +72,10 @@ def bubble_sort(parameter):
             break
     return parameter
 
-# Fungsi Untuk Mengubah himpunan menjadi list agar bisa diurutkan
+# Mengubah himpunan A menjadi list agar bisa diurutkan
 A_list = list(A)
 
-# Fungsi Untuk Mengurutkan Himpunan A dengan bubble sort
+# Mengurutkan Himpunan A dengan bubble sort
 sorted_A = bubble_sort(A_list)
 
 # Menampilkan hasil setelah diurutkan
