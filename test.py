@@ -1,3 +1,4 @@
+
 # Perkalian Matriks 4x4
 matriksC = [
     [44, 55, 34, 10],
@@ -50,3 +51,36 @@ print("Beda setangkup A dan B:", beda_setangkup)
 print("Peluang P(A):", P_A)
 print("Peluang P(B):", P_B)
 
+
+# Definisikan himpunan A
+A = {109, 222, 120, 150, 200, 321, 410, 120, 230, 300, 111, 89, 70, 45, 57, 31, 39, 900, 378, 400, 101, 201, 301, 1}
+
+# Fungsi untuk mengurutkan himpunan A dengan bubble sort
+def bubble_sort(parameter):
+    n = len(parameter)
+    # Melakukan bubble sort
+    for i in range(n):
+        # Flag untuk memeriksa apakah ada pertukaran elemen
+        swapped = False
+        # Perulangan untuk membandingkan elemen-elemen yang berdekatan
+        for j in range(0, n - i - 1):
+            if parameter[j] > parameter[j + 1]:
+                # Tukar elemen jika elemen sebelumnya lebih besar
+                parameter[j], parameter[j + 1] = parameter[j + 1], parameter[j]
+                swapped = True
+        # Jika tidak ada pertukaran, array sudah terurut
+        if not swapped:
+            break
+    return parameter
+
+# Himpunan yang diberikan
+A = {109, 222, 120, 150, 200, 321, 410, 120, 230, 300, 111, 89, 70, 45, 57, 31, 39, 900, 378, 400, 101, 201, 301, 1}
+
+# Mengubah himpunan menjadi list agar bisa diurutkan
+A_list = list(A)
+
+# Mengurutkan A dengan bubble sort
+sorted_A = bubble_sort(A_list)
+
+# Menampilkan hasil setelah diurutkan
+print("Himpunan yang diurutkan:", sorted_A)
