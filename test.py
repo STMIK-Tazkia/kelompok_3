@@ -67,7 +67,7 @@ def bubble_sort(parameter):
                 # Tukar elemen jika elemen sebelumnya lebih besar
                 parameter[j], parameter[j + 1] = parameter[j + 1], parameter[j]
                 swapped = True
-        # Jika tidak ada pertukaran, array sudah terurut
+        # Jika tidak ada pertukaran, parameter array sudah terurut
         if not swapped:
             break
     return parameter
