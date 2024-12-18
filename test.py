@@ -1,4 +1,4 @@
-
+#bagian 1 soal 6
 # Perkalian Matriks 4x4
 matriksC = [
     [44, 55, 34, 10],
@@ -22,6 +22,7 @@ print("Hasil Perkalian Matriks:")
 for baris in hasil:
     print(baris)
 
+#bagian 2 soal 7
 # Definisikan himpunan A dan B
 A = {231, 768, 50, 18, 22, 390, 23, 14, 8, 19}
 B = {19, 12, 56, 21, 21.7, 768, 8, 6, 4, 22}
@@ -51,7 +52,7 @@ print("Beda setangkup A dan B:", beda_setangkup)
 print("Peluang P(A):", P_A)
 print("Peluang P(B):", P_B)
 
-
+#bagian 3 soal 1
 # Definisikan himpunan A
 A = {109, 222, 120, 150, 200, 321, 410, 120, 230, 300, 111, 89, 70, 45, 57, 31, 39, 900, 378, 400, 101, 201, 301, 1}
 
@@ -81,6 +82,7 @@ sorted_A = bubble_sort(A_list)
 # Menampilkan hasil setelah diurutkan
 print("Himpunan yang diurutkan:", sorted_A)
 
+#bagian 3 Soal 2
 # Himpunan yang diberikan
 A = {109, 222, 120, 150, 200, 321, 410, 120, 230, 300, 111, 89, 70, 45, 57, 31, 39, 900, 378, 400, 101, 201, 301, 1}
 
