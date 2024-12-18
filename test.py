@@ -1,4 +1,4 @@
-#bagian 1 soal 5
+#bagian 1 soal 6
 # Perkalian Matriks 4x4
 matriksC = [
     [44, 55, 34, 10],
